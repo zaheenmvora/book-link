@@ -1,0 +1,61 @@
+/* ===== Modal Overlay (with blur) ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Dim background + blur behind */
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===== Modal Content Box ===== */
+.modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-width: 350px;
+  max-width: 500px;
+  animation: popIn 0.3s ease;
+}
+
+/* ===== Fade Animations ===== */
+.fade-in {
+  animation: fadeIn 0.3s forwards;
+}
+.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ===== Pop animation for modal ===== */
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0.5; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ===== Extra: when page content is blurred ===== */
+.blurred {
+  filter: blur(8px) brightness(0.7);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}

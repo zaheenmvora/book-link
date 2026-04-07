@@ -1,0 +1,89 @@
+/* Home.css file */
+.main-container {
+    border-radius: '10px';
+    background-color: "white";
+    color: '#4A4A4A';
+    font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.inside-container {
+    position: relative;
+    width: 73rem;
+    height: 35rem;
+    padding: 5rem;
+    border-radius: 50px;
+    user-select: none;
+    box-sizing: border-box;
+    max-width: none;
+    max-height: none;
+    overflow: auto;
+    color: #4A4A4A;
+    box-shadow: 8px 8px 20px #1B3C53, -8px -8px 20px #1B3C53;
+    border: 4px solid #1B3C53;
+}
+
+.text-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+    color: #1B3C53;
+    margin-top: 6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    text-align: 'center';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container p {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #1B3C53;
+    /* margin-top: 0.5rem; */
+    font-weight: 500;
+}
+
+.main-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    border-radius: 15px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.explorebtn {
+    background-color: #1B3C53;
+    border-radius: 30px;
+    height: 3rem;
+    width: 5rem;
+    border: 2px solid #1B3C53;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 9rem;
+}
+
+.explorebtn:hover {
+    border: none;
+    box-shadow: 2px 2px 5px #1B3C53;
+    background-color: #1B3C53;
+}

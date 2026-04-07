@@ -1,0 +1,35 @@
+.nav-option Link:hover {
+    color: cyan;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #F9F3EF;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #1B3C53;
+    background-color: #F9F3EF;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #F9F3EF;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 0;
+    /* No underline on hover since we use background */
+}
