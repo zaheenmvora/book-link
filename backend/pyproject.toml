@@ -1,0 +1,23 @@
+[project]
+name = "booklink"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "zaheen"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard] (>=0.124.1,<0.125.0)",
+    "uvicorn[standard] (>=0.38.0,<0.39.0)",
+    "sqlalchemy (>=2.0.0)",
+    "pymysql (>=1.1.0)",
+    "python-jose[cryptography] (>=3.3.0)",
+    "passlib[bcrypt] (>=1.7.4)",
+    "python-dotenv (>=1.0.1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
