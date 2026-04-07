@@ -1,0 +1,16 @@
+.nav-link {
+  text-decoration: none;
+  color: #F9F3EF;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #264d63; /* hover effect */
+}
+
+.nav-link.active {
+  background-color: lightblue;  /* 👈 active page highlight */
+  color: #1B3C53;               /* darker text for contrast */
+}
